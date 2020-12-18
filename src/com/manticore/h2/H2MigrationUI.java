@@ -97,7 +97,7 @@ public class H2MigrationUI extends JFrame {
           TreeSet<DriverRecord> driverRecords = H2MigrationTool.readDriverRecords(resourceStr);
 
           DefaultListModel<DriverRecord> listModel = new DefaultListModel<>();
-          listModel.addAll(driverRecords);
+          driverRecords.forEach(listModel::addElement);
 
           fromVersionList.setModel(listModel);
           toVersionList.setModel(listModel);

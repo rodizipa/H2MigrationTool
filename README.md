@@ -1,5 +1,5 @@
 # H2MigrationTool
-A software tool for migration and old H2 database into a new H2 database format automatically.
+Project based on https://github.com/manticore-projects/H2MigrationTool but JDK8 and some other changes.
 
 ## Usage
 ```man
